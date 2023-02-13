@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+ int main(){
+ 	int x;
+ 	 printf("Lütfen bir sayi giriniz");
+ 	  printf("\n\n");
+ 	  scanf("%d",&x); 
+ 	   if(x%3==0 && x%5==0){                               // && Ve anlamina gelir || veya anlamina gelir
+ 	   	printf("Bu sayi 3 ve 5e tam bölünebilir");
+		}
+		else{
+			printf("Bu sayi 3 ve 5'e tam bölünmez");
+		}
+ 	
+ 	
+ 	return 0;
+ }
