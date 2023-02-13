@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	         printf("Sınav Ortalama Hesaplama Uygulamasi");  
+	          printf("\n\n");
+	    int sinav1,sinav2,ort;                                //İnt Değerinde sayilarimizi görevlendirdik 
+	     printf("Birinci Sinav Sonucunuzu Giriniz :");     
+	      scanf("%d",&sinav1);                                // Scanf Komudu ile girilen sinav1 komudunu çektik         
+	     printf("İkinci Sinav Sonucunu Giriniz : ");
+	      scanf("%d",&sinav2);                                // Scanf Komudu İle girilen sinav2 Komudunuda çektil
+	        ort = (sinav1+sinav2)/2;                          // Buraya bir denklem yaptik sinav ortalamamızı bulmami için
+	       if(ort>50){                                                 //Eğer Ortalamamız 50'den düşük ise Yazdırmamız gerekeni düşük ise yazdırmamiz gereken döngüyü gösterdik
+	       	 printf("Sınav Notunuz : %d Başarılı Oldunuz",ort);
+		   }
+		   else{
+		   	printf("Sınav Notunuz : %d Başarısız Oldunuz",ort);
+		   }
+	return 0;
+}
